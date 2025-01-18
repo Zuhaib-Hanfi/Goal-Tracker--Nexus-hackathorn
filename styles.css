@@ -1,0 +1,359 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+section {
+    overflow-x: hidden;
+    margin-bottom: 2rem;
+    background: #808080;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    padding: 0.5rem;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 p,
+h1 p {
+    margin-left: 0.5rem;
+    background-color: #ffa31a;
+    color: black;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+/* Goal Tracking */
+/* Daily Goals Section */
+#daily-goals {
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#goal-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    /* padding: 1rem; */
+    overflow-x: hidden;
+}
+
+.goal-card {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: hidden;
+}
+
+.goal-card input {
+    width: 80%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+div label{
+color: #ffa31a;
+font-weight: bold;
+}
+
+.goal-card .update-progress-btn {
+    background-color: #ffa31a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.goal-card .update-progress-btn:hover {
+    background-color: #45a049;
+}
+
+#add-card-btn {
+    background-color: #ffa31a;
+    color: white;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#add-card-btn:hover {
+    background-color: black;
+}
+
+/* Chart Styling */
+.progress-chart {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Calendar Planner */
+/* Calendar Planner - Single Month View */
+#month-selector {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 7rem;
+}
+
+#calendar {
+    margin-top: 1rem;
+}
+
+.days-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day,
+.empty-slot {
+    padding: 0.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 10px;
+    color:black;
+}
+
+.day:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.empty-slot {
+    visibility: hidden;
+}
+
+h3 {
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Highlight days with plans */
+.day.has-plan {
+    background-color: #ffd90093;
+    /* Yellow color for days with plans */
+    border: 1px solid #ffcc00;
+    /* Slightly darker border */
+    color: #000;
+    /* Black text for contrast */
+}
+
+/* Highlight current day */
+.day.current-day {
+    background-color: #4caf4f94;
+    /* Green background */
+    border: 2px solid #4caf50;
+    /* Darker green border */
+    color: #fff;
+    /* White text for contrast */
+}
+
+/* Strike through past days */
+.past-day {
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+/* .past-day:after {
+    content: '';
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, transparent 50%, #565353 50%, transparent 53%); 
+    background-color: black;
+    color: white;
+} */
+
+/* Strike through completed days horizontally */
+.completed-day {
+    text-decoration: line-through;
+    background-color: #a1585893;
+    border: #a15858;
+}
+
+/* Popup styling */
+.day-popup {
+    display: none;
+    position: absolute;
+    top: -86px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.648);
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+.day-popup div {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 350px;
+}
+
+/* Show popup on hover */
+.day:hover .day-popup {
+    display: block;
+}
+
+
+/* Tooltip Container for Day Plans */
+.day {
+    position: relative;
+    /* To position the tooltip relative to each day */
+}
+
+.day .tooltip {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    bottom: 120%;
+    /* Position above the day box */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.day .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Arrow at the bottom of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.day:hover .tooltip {
+    display: block;
+    /* Show the tooltip on hover */
+}
+
+/* Style for popup-buttons */
+button {
+    padding: 0.7rem 1.2rem;
+    margin-left: 0.6rem;
+    background: #ffa31a;
+    color:black;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+    transition: 1s;
+    color: #ffa31a;
+}
+
+
+
+
+/* Mind Map Creator */
+#mind-map-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.node {
+    padding: 1rem;
+    background: #4caf50;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #808080;
+    color: white;
+}

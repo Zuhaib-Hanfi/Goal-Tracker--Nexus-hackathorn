@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Writing Goal Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Daily Writing <p>Goal Tracker</p></h1>
+    <p>Set, track, and achieve your writing goals effectively!</p>
+  </header>
+
+  <main>
+    <!-- Goal Tracking Section -->
+    <section id="daily-goals">
+      <h2>Daily<p>Goals</p></h2>
+      <div id="goal-cards-container">
+        <!-- Example Cards -->
+        <!-- <div class="goal-card">
+          <input type="text" class="task-input" placeholder="Enter task/goal" />
+          <div class="word-goal">
+            <label>Word Goal:</label>
+            <input type="number" class="word-input" placeholder="e.g., 1000" />
+          </div>
+          <div class="words-written">
+            <label>Words Written:</label>
+            <input type="number" class="word-input" placeholder="e.g., 200" />
+          </div>
+          <button class="update-progress-btn">Update Progress</button>
+          <div class="progress-chart">
+            <canvas></canvas>
+          </div>
+        </div> -->
+      </div>
+      <button id="add-card-btn">+</button>
+    </section>
+
+
+    <!-- Calendar Planner Section -->
+    <section class="calendar-planner">
+      <h2>Calendar <p>Planner</p></h2>
+      <select id="month-selector">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+      </select>
+      <div id="calendar"></div>
+    </section>
+
+
+    <!-- Mind Map Creator Section -->
+    <section class="mind-map-creator">
+      <h2>Mind-Map <p>Creator</p></h2>
+      <button id="add-node">Add Node</button>
+      <div id="mind-map-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Design and Bult by Hanfi &hearts;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
