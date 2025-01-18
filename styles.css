@@ -297,57 +297,14 @@ h3 {
 }
 
 /* Show popup on hover */
-.day:hover .day-popup {
-    display:inline-block;
-    /* flex-direction:column; */
-    
-}
-/* @media (max-width:800px){
-    .day-popup{
-        background-color: red;
-    }
-} */
 
-/* Tooltip Container for Day Plans */
-.day {
-    position: relative;
-    /* To position the tooltip relative to each day */
-}
-
-.day .tooltip {
-    display: none;
-    /* Hidden by default */
-    position: absolute;
-    bottom: 120%;
-    /* Position above the day box */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-
-.day .tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    /* Arrow at the bottom of the tooltip */
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 5px;
-    border-style: solid;
-    border-color: #333 transparent transparent transparent;
-}
-
-.day:hover .tooltip {
+.day:hover .day-popup{
     display: block;
-    /* Show the tooltip on hover */
 }
+
+
+
+
 
 /* Style for popup-buttons */
 button {
@@ -367,7 +324,24 @@ button:hover {
     color: #ffa31a;
 }
 
-
+@media (max-width:800px){
+    .day-popup{
+        top: -230px;
+    }
+    .day:hover .day-popup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        scale: 0.75;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 /* Footer */
