@@ -177,12 +177,12 @@ function renderMonthCalendar(year, month) {
     });
 
     deleteButton.addEventListener("click", () => {
-      if(dayElement.dataset.plan){
-      delete dayElement.dataset.plan;
-      dayElement.classList.remove("has-plan"); // Remove "has-plan" class
-      planText.textContent = "No plans for today";
+      if (dayElement.dataset.plan) {
+        delete dayElement.dataset.plan;
+        dayElement.classList.remove("has-plan"); // Remove "has-plan" class
+        planText.textContent = "No plans for today";
       }
-      else{
+      else {
         alert("Please Enter a Plan First!")
       }
     });
@@ -199,9 +199,9 @@ function renderMonthCalendar(year, month) {
         alert("No plan exists for this day to edit!");
       }
     });
-    
 
-    
+
+
     completeButton.addEventListener("click", () => {
       if (dayElement.classList.contains("completed-day")) {
         // If the day is marked as completed, revert it to a normal state with a plan
@@ -215,8 +215,8 @@ function renderMonthCalendar(year, month) {
         alert("No plans to mark as completed!");
       }
     });
-    
-    
+
+
 
     daysGrid.appendChild(dayElement);
   }
