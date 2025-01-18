@@ -13,6 +13,22 @@ header {
     padding: 1.5rem;
 }
 
+header img{
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    left: 10vw;
+    top: 4vw;
+}
+
+@media (max-width:800px) {
+    header img{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
 header h1 {
     margin: 0;
     color: white;
@@ -135,6 +151,24 @@ font-weight: bold;
     height: 100px;
 }
 
+.progress-chart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .progress-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+
 
 /* Calendar Planner */
 /* Calendar Planner - Single Month View */
@@ -241,9 +275,9 @@ h3 {
 /* Popup styling */
 .day-popup {
     display: none;
-    position: absolute;
+    position: fixed;
     top: -86px;
-    left: 50%;
+    left: 50%; 
     transform: translateX(-50%);
     padding: 10px;
     background: rgba(0, 0, 0, 0.648);
@@ -253,7 +287,6 @@ h3 {
     z-index: 10;
     white-space: nowrap;
     text-align: center;
-
 }
 
 .day-popup div {
@@ -261,14 +294,19 @@ h3 {
     font-size: 14px;
     font-weight: bold;
     color: white;
-    width: 350px;
 }
 
 /* Show popup on hover */
 .day:hover .day-popup {
-    display: block;
+    display:inline-block;
+    /* flex-direction:column; */
+    
 }
-
+/* @media (max-width:800px){
+    .day-popup{
+        background-color: red;
+    }
+} */
 
 /* Tooltip Container for Day Plans */
 .day {
@@ -330,24 +368,6 @@ button:hover {
 }
 
 
-
-
-/* Mind Map Creator */
-#mind-map-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.node {
-    padding: 1rem;
-    background: #4caf50;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-}
 
 
 /* Footer */

@@ -7,27 +7,28 @@ function createGoalCard() {
   card.classList.add("goal-card");
 
   card.innerHTML = `
-    <input type="text" class="task-input" placeholder="Enter task/goal" />
+    <input type="text" class="task-input" placeholder="Enter task/goal">
     <div class="word-goal">
-      <label>WORDS GOAL</label>
-      <input type="number" class="word-input" placeholder="e.g., 1000" />
+      <label>Word Goal:</label>
+      <input type="number" class="word-input" placeholder="e.g., 1000">
     </div>
     <div class="words-written">
-      <label>WORDS WRITTEN</label>
-      <input type="number" class="word-input" placeholder="e.g., 200" />
+      <label>Words Written:</label>
+      <input type="number" class="word-input" placeholder="e.g., 200">
     </div>
     <button class="update-progress-btn">Update Progress</button>
     <div class="progress-chart">
       <canvas width="100" height="100"></canvas>
+      <span class="progress-percentage">0%</span>
     </div>
   `;
 
-  // Add event listener for updating progress
   const updateButton = card.querySelector(".update-progress-btn");
   updateButton.addEventListener("click", () => updateProgress(card));
 
   goalCardsContainer.appendChild(card);
 }
+
 
 function updateProgress(card) {
   const wordGoal = parseInt(card.querySelector(".word-goal .word-input").value) || 0;
@@ -39,28 +40,32 @@ function updateProgress(card) {
   }
 
   const progress = Math.min((wordsWritten / wordGoal) * 100, 100);
-
   const canvas = card.querySelector("canvas");
   const ctx = canvas.getContext("2d");
   const radius = canvas.width / 2;
 
-  // Clear previous chart
+  // Clear and redraw pie chart
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Draw background circle
+  // Background circle
   ctx.beginPath();
   ctx.arc(radius, radius, radius - 10, 0, 2 * Math.PI);
   ctx.fillStyle = "#e0e0e0";
   ctx.fill();
 
-  // Draw progress arc
+  // Progress arc
   ctx.beginPath();
   ctx.moveTo(radius, radius);
   ctx.arc(radius, radius, radius - 10, -Math.PI / 2, (2 * Math.PI * progress) / 100 - Math.PI / 2);
   ctx.lineTo(radius, radius);
   ctx.fillStyle = "#ffa31a";
   ctx.fill();
+
+  // Update percentage text
+  const percentageElement = card.querySelector(".progress-percentage");
+  percentageElement.textContent = `${Math.round(progress)}%`;
 }
+
 
 // Initialize with 3 default cards
 for (let i = 0; i < 4; i++) {
@@ -229,17 +234,3 @@ monthSelector.addEventListener("change", () => {
 });
 
 renderMonthCalendar(2025, 0);
-
-// 3. Mind Map Creator Section
-const addNodeButton = document.getElementById("add-node");
-const mindMapContainer = document.getElementById("mind-map-container");
-
-addNodeButton.addEventListener("click", () => {
-  const nodeText = prompt("Enter node text:");
-  if (nodeText) {
-    const node = document.createElement("div");
-    node.classList.add("node");
-    node.textContent = nodeText;
-    mindMapContainer.appendChild(node);
-  }
-});
