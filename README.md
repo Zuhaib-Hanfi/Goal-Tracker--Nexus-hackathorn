@@ -28,12 +28,12 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 **Setup instructions:**
 
 1] Clone the repository
-   git clone https://github.com/Zuhaib-Hanfi/Goal-Tracker--Nexus-hackathorn.git
+   * git clone https://github.com/Zuhaib-Hanfi/Goal-Tracker--Nexus-hackathorn.git
    
 2] Navigate to the project repository
-   cd Goal-Tracker--Nexus-hackathorn
+   * cd Goal-Tracker--Nexus-hackathorn
    
-3] Open the  index.html file in a browser to run the appication
+3] Open the  *index.html* file in a browser to run the appication
 
 
 **How to Use**
@@ -58,9 +58,8 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 
 **Future Enhancements:**
 * Save user data using Local Storage or a backend API.
-* Add undo/redo functionality for the mind map.
 * Enhance calendar responsiveness for smaller devices.
-* Include export options for mind maps or plans.
+* Include mind maps or plans section.
 
 **License**
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you like!
