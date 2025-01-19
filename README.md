@@ -56,7 +56,8 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 **SCREENSHOTS:**
 
 *Daily Goals Section*
-![image](https://github.com/user-attachments/assets/6324e022-b143-46b4-876f-ccf4e05199d1)
+![image](https://github.com/user-attachments/assets/a0e99fe8-2010-4628-8975-50cb54f801bf)
+
 
 *Calender Planer Section*
 ![image](https://github.com/user-attachments/assets/1adb8bef-a869-4fcd-847d-c82e8aa56560)
