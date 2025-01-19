@@ -5,7 +5,7 @@
 *Project Overview*
 The Daily Writing Goal Tracker is a productivity tool designed to help users set, track, and achieve their daily writing goals. It combines functionalities for goal tracking and calendar planning for your days
 
-**Features**
+**Features:**
 
 **Daily Goals Tracker:**
 * Set and track daily writing goals.
@@ -26,6 +26,7 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 
 
 **Setup instructions:**
+
 1] Clone the repository
    git clone https://github.com/Zuhaib-Hanfi/Goal-Tracker--Nexus-hackathorn.git
    
