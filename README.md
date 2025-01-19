@@ -3,7 +3,7 @@
 **Daily Writing Goal Tracker**
 
 *Project Overview*
-The Daily Writing Goal Tracker is a productivity tool designed to help users set, track, and achieve their daily writing goals. It combines functionalities for goal tracking, calendar planning, and visual brainstorming to boost efficiency and organization.
+The Daily Writing Goal Tracker is a productivity tool designed to help users set, track, and achieve their daily writing goals. It combines functionalities for goal tracking and calendar planning for your days
 
 **Features**
 
@@ -25,11 +25,13 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 *JavaScript*: For interactivity and dynamic updates.
 
 
-*Setup instructions:**
+**Setup instructions:**
 1] Clone the repository
    git clone https://github.com/Zuhaib-Hanfi/Goal-Tracker--Nexus-hackathorn.git
+   
 2] Navigate to the project repository
    cd Goal-Tracker--Nexus-hackathorn
+   
 3] Open the  index.html file in a browser to run the appication
 
 
@@ -46,10 +48,14 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 * Hover over a day to view plans.
 
 **Screenshots:**
+
+*Daily Goals Section*
 ![image](https://github.com/user-attachments/assets/6324e022-b143-46b4-876f-ccf4e05199d1)
+
+*Calender Planer Section*
 ![image](https://github.com/user-attachments/assets/1adb8bef-a869-4fcd-847d-c82e8aa56560)
 
-**Future Enhancements**
+**Future Enhancements:**
 * Save user data using Local Storage or a backend API.
 * Add undo/redo functionality for the mind map.
 * Enhance calendar responsiveness for smaller devices.
@@ -57,5 +63,3 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 
 **License**
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you like!
-
-
