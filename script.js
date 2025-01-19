@@ -226,7 +226,6 @@ function renderMonthCalendar(year, month) {
 
 
 
-
 const monthSelector = document.getElementById("month-selector");
 monthSelector.addEventListener("change", () => {
   const selectedMonth = parseInt(monthSelector.value);

@@ -21,6 +21,7 @@ header img {
     top: 4vw;
 }
 
+/* Media query for logo image */
 @media (max-width:800px) {
     header img {
         position: relative;
@@ -72,7 +73,6 @@ h1 p {
     border-radius: 5px;
 }
 
-/* Goal Tracking */
 /* Daily Goals Section */
 #daily-goals {
     margin: 2rem 0;
@@ -170,8 +170,8 @@ div label {
 
 
 
-/* Calendar Planner */
-/* Calendar Planner - Single Month View */
+
+/* Style for Calendar Planner section*/
 #month-selector {
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -229,38 +229,32 @@ h3 {
 /* Highlight days with plans */
 .day.has-plan {
     background-color: #ffd90093;
-    /* Yellow color for days with plans */
     border: 1px solid #ffcc00;
-    /* Slightly darker border */
     color: #000;
-    /* Black text for contrast */
 }
 
 /* Highlight current day */
 .day.current-day {
     background-color: #4caf4f94;
-    /* Green background */
     border: 2px solid #4caf50;
-    /* Darker green border */
     color: #fff;
-    /* White text for contrast */
 }
 
-/* Strike through past days */
+/* Style for past days */
 .past-day {
     position: relative;
     background-color: black;
     color: white;
 }
 
-/* Strike through completed days horizontally */
+/* Strike through & change color completed days horizontally */
 .completed-day {
     text-decoration: line-through;
     background-color: #a1585893;
     border: #a15858;
 }
 
-/* Popup styling */
+/* Styling for popup */
 .day-popup {
     display: none;
     position: fixed;
@@ -284,8 +278,7 @@ h3 {
     color: white;
 }
 
-/* Show popup on hover */
-
+/* displaying popup on hover */
 .day:hover .day-popup {
     display: block;
 }
@@ -312,6 +305,7 @@ button:hover {
     color: #ffa31a;
 }
 
+/* Changing orientation of popup for smaller screens for better visibility */
 @media (max-width:800px) {
     .day-popup {
         top: -230px;
@@ -334,7 +328,7 @@ button:hover {
 }
 
 
-/* Footer */
+/* Footer section */
 footer {
     text-align: center;
     padding: 1rem;
