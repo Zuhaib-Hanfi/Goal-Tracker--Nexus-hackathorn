@@ -8,11 +8,13 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 **FEATURES:**
 
 **Daily Goals Tracker:**
+
 * Set and track daily writing goals.
 * Visualize progress with an interactive pie chart.
 * Percentage of progress displayed at the center of the chart.
 
 **Calendar Planner:**
+
 * View monthly calendars.
 * Add, edit, and delete plans for specific days.
 * Mark tasks as completed or uncompleted dynamically.
@@ -22,7 +24,9 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 **TECHNOLOGIES USED**
 
 *HTML*: For structuring the content.
+
 *CSS*: For styling and creating visually appealing layouts.
+
 *JavaScript*: For interactivity and dynamic updates.
 
 
