@@ -5,7 +5,7 @@
 *Project Overview*
 The Daily Writing Goal Tracker is a productivity tool designed to help users set, track, and achieve their daily writing goals. It combines functionalities for goal tracking and calendar planning for your days
 
-**Features:**
+**FEATURES:**
 
 **Daily Goals Tracker:**
 * Set and track daily writing goals.
@@ -19,13 +19,13 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 * Automatically highlight past days and the current day.
 
 
-**Technologies Used**
+**TECHNOLOGIES USED**
 *HTML*: For structuring the content.
 *CSS*: For styling and creating visually appealing layouts.
 *JavaScript*: For interactivity and dynamic updates.
 
 
-**Setup instructions:**
+**SETUP INSTRUCTIONS:**
 
 1] Clone the repository
    * git clone https://github.com/Zuhaib-Hanfi/Goal-Tracker--Nexus-hackathorn.git
@@ -36,7 +36,7 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 3] Open the  *index.html* file in a browser to run the appication
 
 
-**How to Use**
+**HOW TO USE**
 
 **Daily Goals Section:**
 * Click the + button to add a new goal card.
@@ -48,7 +48,7 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 * Click on a day to add, edit, delete, or mark tasks as completed.
 * Hover over a day to view plans.
 
-**Screenshots:**
+**SCREENSHOTS:**
 
 *Daily Goals Section*
 ![image](https://github.com/user-attachments/assets/6324e022-b143-46b4-876f-ccf4e05199d1)
@@ -56,10 +56,10 @@ The Daily Writing Goal Tracker is a productivity tool designed to help users set
 *Calender Planer Section*
 ![image](https://github.com/user-attachments/assets/1adb8bef-a869-4fcd-847d-c82e8aa56560)
 
-**Future Enhancements:**
+**FUTURE ENHANCEMENTS:**
 * Save user data using Local Storage or a backend API.
 * Enhance calendar responsiveness for smaller devices.
 * Include mind maps or plans section.
 
-**License**
+**LICENSE:**
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you like!
